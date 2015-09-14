@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/sitehome/css/libs/font-awesome.min.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('bundles/sitehome/css/libs/bootstrap.min.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('bundles/sitehome/css/site.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('bundles/sitehome/css/app.css') }}" rel="stylesheet"/>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+        {% block js_base %}
+            <script src="{{ asset('bundles/sitehome/js/libs/jquery-1.11.1.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/jquery-ui.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/jquery.ui.touch-punch.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/bootstrap.min.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/knockout-3.2.0.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/knockout.mapping.js') }}" type="text/javascript"></script>
+            <script src="{{ asset('bundles/sitehome/js/libs/jquery.jeditable.mini.js') }}" type="text/javascript"></script>
+        {% endblock %}
+        {% block js_per %}
+            <script src="{{ asset('bundles/sitehome/js/app.js') }}" type="text/javascript"></script>
+        {% endblock %}
+    </body>
+</html>

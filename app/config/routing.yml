@@ -1,0 +1,6 @@
+site_home:
+    resource: "@SiteHomeBundle/Controller/"
+    type:     annotation
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
